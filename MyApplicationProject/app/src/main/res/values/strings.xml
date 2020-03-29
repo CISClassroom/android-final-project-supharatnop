@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApplicationProject</string>
+
+    <string-array name="list_fic">
+        <item>นิยาย 1</item>
+        <item>นิยาย 2</item>
+        <item>นิยาย 3</item>
+    </string-array>
+</resources>
