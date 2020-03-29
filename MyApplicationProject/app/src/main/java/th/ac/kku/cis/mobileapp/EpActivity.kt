@@ -28,8 +28,14 @@ class EpActivity : AppCompatActivity() {
             i.putExtra("name",name)
             startActivity(i)
 
+        }
 
-
+        list.setOnItemClickListener{ parent, view, position, id ->
+            val intent = Intent(this, ShowEpActivity::class.java)
+            val showdetai = parent.getItemAtPosition(position) as AddFicModel
+            intent.putExtra("epName",showdetai.EpName.toString())
+            intent.putExtra("story",showdetai.Story.toString())
+            startActivity(intent)
         }
 
         listViewItems = findViewById<View>(R.id.list) as ListView
@@ -54,7 +60,7 @@ class EpActivity : AppCompatActivity() {
                             // add data to object
                             val todoItem = AddFicModel.create()
                             todoItem.EpName = map.get("epName") as String?
-//                            todoItem.Story = map.get("Story") as String?
+                            todoItem.Story = map.get("story") as String?
 //                            todoItem.Id = map.get("Id") as String?
                             toDoItemList!!.add(todoItem);
                             adapter.notifyDataSetChanged()
@@ -65,6 +71,7 @@ class EpActivity : AppCompatActivity() {
             override fun onCancelled(databaseError: DatabaseError) {
             }
         })
+
     }
 }
 
