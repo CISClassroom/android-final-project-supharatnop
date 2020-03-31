@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "931694617575",
+    "firebase_url": "https://myficprojectapplication.firebaseio.com",
+    "project_id": "myficprojectapplication",
+    "storage_bucket": "myficprojectapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931694617575:android:e489c9cef5657b23655342",
+        "android_client_info": {
+          "package_name": "th.ac.kku.cis.mobileapp.myficprojectapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931694617575-2s19kttuvs7ebvb2tvq1c7ai5lkck1nb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.ac.kku.cis.mobileapp.myficprojectapplication",
+            "certificate_hash": "6c7d6e3ce0377325bd6042470898d389c99ef517"
+          }
+        },
+        {
+          "client_id": "931694617575-au7unjn2h0ki04v2he8fgiqmn9pvgvte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqR5ueEG3FQ4z6kZBp3ScLDO8w1bWGblw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931694617575-au7unjn2h0ki04v2he8fgiqmn9pvgvte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
