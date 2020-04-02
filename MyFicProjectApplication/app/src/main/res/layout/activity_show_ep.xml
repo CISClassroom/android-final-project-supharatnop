@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAE6C3"
     android:orientation="vertical"
     tools:context=".ShowEpActivity">
 
@@ -27,23 +28,39 @@
             app:srcCompat="@drawable/logout" />
     </LinearLayout>
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/textView_Topname"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/textView_namelog"
-        tools:layout_editor_absoluteX="104dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView_body"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/textView_Topname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            app:layout_constraintTop_toBottomOf="@+id/textView_namelog"
+            tools:layout_editor_absoluteX="104dp" />
+
+        <TextView
+            android:id="@+id/textView_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="TextView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+</LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

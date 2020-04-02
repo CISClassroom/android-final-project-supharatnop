@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FAE6C3"
     android:orientation="vertical"
     tools:context=".AddEpActivity">
 
@@ -47,24 +48,24 @@
             android:layout_width="95dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:text="ตอนที่/ชื่อตอน"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:text="ตอนที่/ชื่อตอน" />
 
         <EditText
             android:id="@+id/editText_EpName"
-            android:layout_width="337dp"
+            android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:layout_marginTop="20dp"/>
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="400dp"
         android:orientation="vertical">
 
         <TextView
@@ -77,7 +78,7 @@
 
         <EditText
             android:id="@+id/editText_Story"
-            android:layout_width="339dp"
+            android:layout_width="306dp"
             android:layout_height="61dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
