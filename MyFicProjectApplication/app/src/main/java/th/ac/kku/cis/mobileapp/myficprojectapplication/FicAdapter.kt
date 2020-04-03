@@ -3,6 +3,7 @@ package th.ac.kku.cis.mobileapp.myficprojectapplication
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
 import android.widget.BaseAdapter
 import android.widget.TextView
 
@@ -34,6 +35,7 @@ class ToDoAddNameFic(context: android.content.Context, toDoItemList: MutableList
 
 
         return view
+
     }
 
     override fun getItem(index: Int): Any {
@@ -52,6 +54,7 @@ class ToDoAddNameFic(context: android.content.Context, toDoItemList: MutableList
         val label1: TextView = row!!.findViewById<TextView>(R.id.textView_name) as TextView
 
     }
+
 }
 
 class ToDoItemAdapter(context: android.content.Context, toDoItemList: MutableList<AddFicModel>) : BaseAdapter() {

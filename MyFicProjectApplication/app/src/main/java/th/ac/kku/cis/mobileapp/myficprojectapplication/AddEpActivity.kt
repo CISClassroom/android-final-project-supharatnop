@@ -35,6 +35,7 @@ class AddEpActivity : AppCompatActivity() {
 
         button_SaveEp.setOnClickListener {
             AddData("String")
+
         }
     }
 
@@ -51,6 +52,16 @@ class AddEpActivity : AppCompatActivity() {
 
 //        newData.EvenId = obj.key
         obj.setValue(newData)
+
+        val inputvalue1 : String = editText_EpName.toString()
+        if (inputvalue1 == null || inputvalue1.trim() == " ") {
+            Toast.makeText(this,"please input data, edit text cannot be blank",Toast.LENGTH_LONG).show()
+        }
+        val inputvalue2 : String = editText_Story.toString()
+        if (inputvalue2 == null || inputvalue1.trim() == " ") {
+            Toast.makeText(this,"please input data, edit text cannot be blank",Toast.LENGTH_LONG).show()
+        }
+
 
         Toast.makeText(applicationContext, "Note save successfully", Toast.LENGTH_LONG).show()
         var i = Intent(this, EpActivity::class.java)

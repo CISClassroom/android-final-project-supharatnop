@@ -84,7 +84,14 @@ class ListFicActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+//        button1.setOnClickListener {
+//            delete(AddModelNameFic)
+//        }
     }
+//    private fun delete(AddModelNameFic : AddNameFic ){
+//        val mydatabase = FirebaseDatabase.getInstance().getReference("AddNameFic")
+//        mydatabase.child(AddModelNameFic.AddNameFic).removeValue()
+//    }
 
 }
 
